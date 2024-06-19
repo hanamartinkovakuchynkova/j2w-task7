@@ -14,13 +14,13 @@
         </thead>
         <tbody>
         [#list posts.content as post]
-        <tr>
-            <td>${post.title}</td>
-            <td>${post.perex?no_esc}</td>
-            <td>datum</td>
-            <td>${post.author}</td>
-            <td><a href="/post/${post.slug}">Přečíst</a></td>
-        </tr>
+            <tr>
+                <td>${post.title}</td>
+                <td>${post.perex?no_esc}</td>
+                <td>datum</td>
+                <td>${post.author}</td>
+                <td><a href="/post/${post.slug}">Přečíst</a></td>
+            </tr>
         [/#list]
         </tbody>
     </table>

@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String slug;
     private String author;
     private String title;
@@ -22,7 +22,7 @@ public class Post {
     public Post() {
     }
 
-    public Post(Long id, String slug, String author, String title, String perex, String body, LocalDate published) {
+    public Post(Integer id, String slug, String author, String title, String perex, String body, LocalDate published) {
         this.id = id;
         this.slug = slug;
         this.author = author;
@@ -32,11 +32,11 @@ public class Post {
         this.published = published;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

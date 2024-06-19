@@ -4,12 +4,16 @@
     <!DOCTYPE html>
     <html lang="cs">
     <head>
-        <meta charset="UTF-8">
-        <title>Blog</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="/static/images/favicon.png">
+        <title>${title}</title>
+        <link rel="icon" href="/images/favicon.png" type="image/png">
     </head>
     <body>
+    <h1>Titulek</h1>
+    <div class="container">
+        [#nested]
+    </div>
     </body>
     </html>
 [/#macro]
